@@ -23,7 +23,6 @@ html {
   letter-spacing: 0.5rem;
   text-shadow: 0.3rem 0.3rem 0.3rem #000;
 }
-/* End of Common Styles */
 
 /* Navbar */
 .navbar {
@@ -130,33 +129,7 @@ html {
 
 /* End of Navbar */
 
-/* Section 1 */
-.section-1 {
-  width: 100%;
-  height: 100vh;
-  background-color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.section-1-icons i {
-  font-size: 35rem;
-  color: #a79a2d;
-  position: absolute;
-  transform: translate(-50%, -50%) scale(0);
-  text-shadow: 0.2rem 0.2rem 0.2rem #000;
-  transition: transform 0.3s;
-}
-
-.section-1-icons i.change {
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 0.3s 0.3s;
-}
-/* End of Section 1 */
-
-/* Section 2 */
+ 
 .section-2 {
   width: 100%;
   height: 100vh;
@@ -302,7 +275,7 @@ html {
   width: 90%;
 }
 
-.food-img {
+.city-img {
   width: 24vw;
   height: 15vw;
   object-fit: cover;
@@ -311,7 +284,7 @@ html {
   transition: all 0.5s;
 }
 
-.gallery-link:hover .food-img {
+.gallery-link:hover .city-img {
   box-shadow: 1rem 1rem 0.1rem #e92929, 2rem 2rem 0.1rem #a2e946,
     3rem 3rem 0.1rem #297ce9, 4rem 4rem 0.1rem #e92999;
   transform: scale(1.1);
@@ -319,7 +292,7 @@ html {
   opacity: 0.5;
 }
 
-.food-name {
+.city-name {
   position: absolute;
   top: 3rem;
   left: 3rem;
@@ -333,12 +306,12 @@ html {
   transition: width 0.3s;
 }
 
-.gallery-link:hover .food-name {
+.gallery-link:hover .city-name {
   width: 100%;
   transition: width 1.5s 0.5s;
 }
 
-.food-description {
+.city-description {
   position: absolute;
   bottom: 3vw;
   left: 2rem;
@@ -353,88 +326,16 @@ html {
   transition: opacity 0.3s;
 }
 
-.gallery-link:hover .food-description {
+.gallery-link:hover .city-description {
   opacity: 1;
   visibility: visible;
   transition: opacity 1s 1s;
 }
 /* End of Section 3 */
 
-/* Section 4 */
 
-.section-4 {
-  width: 100%;
-  height: 30vh;
-  background-color: #222;
-  display: flex;
-  justify-content: space-around;
-  padding: 3rem 0;
-  position: relative;
-  align-items: flex-start;
-}
 
-.section-4-text {
-  text-transform: uppercase;
-}
-
-.section-4-heading {
-  font-size: 4rem;
-  font-weight: 900;
-  color: #a79a2d;
-}
-
-.section-4-paragraph {
-  font-size: 1.5rem;
-  color: #888;
-}
-
-.signup-form {
-  /* position: relative; */
-  display: flex;
-  align-items: center;
-}
-
-.signup-form-input {
-  width: 35rem;
-  height: 5rem;
-  padding: 1rem;
-  border: 0.2rem solid #a79a2d;
-  font-size: 1.6rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  color: #a79a2d;
-}
-
-.signup-form-input::placeholder {
-  color: #a79a2d;
-}
-
-.signup-form-btn {
-  position: relative;
-  left: -4.5rem;
-  width: 4rem;
-  height: 4rem;
-  background-color: #333;
-  color: #a79a2d;
-  border: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-.copyright {
-  position: absolute;
-  bottom: 3rem;
-  font-size: 1.7rem;
-  font-weight: 200;
-  color: #eee;
-  letter-spacing: 0.1rem;
-  border-top: 0.1rem solid #888;
-  padding-top: 6rem;
-  width: 100%;
-  text-align: center;
-}
-/* End of Section 4 */
-
+ 
 /* Responsive */
 @media (max-width: 1400px) {
   html {
@@ -455,21 +356,14 @@ html {
     margin: 5rem;
   }
 
-  .food-img {
+  .city-img {
     width: 100%;
     height: 100%;
   }
 }
 
 @media (max-width: 1000px) {
-  .section-heading {
-    font-size: 9rem;
-    margin: 0 5rem;
-  }
-
-  .section-1-icons i {
-    font-size: 25rem;
-  }
+   
 
   .cards-container {
     flex-wrap: wrap;
@@ -479,9 +373,7 @@ html {
     margin: 5rem;
   }
 
-  .section-4 {
-    height: 30rem;
-  }
+  
 }
 
 @media (max-width: 900px) {
@@ -498,32 +390,7 @@ html {
   }
 }
 
-@media (max-width: 700px) {
-  .section-heading {
-    font-size: 7rem;
-    margin: 0 10rem;
-  }
-
-  .section-1-icons i {
-    font-size: 20rem;
-  }
-
-  .menu {
-    left: 2rem;
-  }
-
-  .section-4 {
-    height: 40rem;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .section-4-text {
-    margin-bottom: 8rem;
-  }
-}
-
+ 
 @media (max-width: 550px) {
   html {
     font-size: 40%;
@@ -532,5 +399,7 @@ html {
   .navbar-link {
     margin: 0 0.7rem;
   }
+
+
 }
 /* End of Responsive */
