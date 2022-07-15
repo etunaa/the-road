@@ -1,3 +1,10 @@
+window.onload = () => {
+  setTimeout(() => {
+    document.querySelector("body").classList.add("display");
+  }, 4000);
+};
+
+
 const container = document.querySelector(".container");
 
 document.querySelector(".open-navbar-icon").addEventListener("click", () => {
