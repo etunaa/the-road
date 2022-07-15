@@ -62,7 +62,7 @@ function initMap(){
             content: property.content
     });
     
-    marker.addListener("click", () =>{
+    marker.addListener("mouseover", () =>{
         detailWindow.open(map, marker);
     })
 }
